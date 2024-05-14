@@ -123,4 +123,4 @@ const App = () => {
 
 ### 4-6. React Component 생애주기
 
-<img src="../img/생애주기.png" style="width: 100%; max-width: 600px; padding: 20px 0;">
+<img src="./img/생애주기.png" style="width: 100%; max-width: 600px; padding: 20px 0;">
