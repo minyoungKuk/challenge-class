@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { LOG_IN, LOG_OUT } from "../redux/reducers/auth.reducer";
+import { LogIn, LogOut } from "../redux/reducers/auth.reducer";
 
 function AuthButton() {
   const dispatch = useDispatch();
@@ -9,7 +9,10 @@ function AuthButton() {
   });
 
   const handleClickButton = () => {
-    const action = { type: isLoggedIn ? LOG_OUT : LOG_IN };
+    // const action = { type: isLoggedIn ? LOG_OUT : LOG_IN };
+    // dispatch(action);
+
+    const action = isLoggedIn ? LogOut() : LogIn();
     dispatch(action);
   };
 
