@@ -9,7 +9,13 @@ function DealCard({ deal }: DealCardProps) {
   return (
     <div>
       <div className="relative aspect-square">
-        <Image className="object-cover" src={imgURL} alt={title} fill />
+        <Image
+          className="object-cover"
+          src={imgURL}
+          alt={title}
+          fill
+          unoptimized
+        />
       </div>
 
       <h6>{title}</h6>
