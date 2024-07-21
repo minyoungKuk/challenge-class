@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .button {
+    @apply border border-gray-600 px-4 py-2 rounded-md hover:brightness-90 active:brightness-90 transition;
+  }
+
+  .button + .button {
+    @apply mt-3;
+  }
+
+  .input {
+    @apply p-2 border border-black rounded;
+  }
+
+  .input + .input {
+    @apply mt-3;
+  }
+}
